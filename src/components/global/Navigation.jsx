@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
+import Button from "../Button";
 
 const Navigation = () => {
     return (
@@ -10,7 +11,7 @@ const Navigation = () => {
                         <Navbar.Brand href="#home"><i className="bi bi-shadows me-2"></i>Rival</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="ms-auto">
+                            <Nav className="m-auto">
                                 <Nav.Link href="#home">Home</Nav.Link>
                                 <Nav.Link href="#home">About</Nav.Link>
                                 <Nav.Link href="#home">Services</Nav.Link>
@@ -20,7 +21,10 @@ const Navigation = () => {
                                 
 
                             </Nav>
+                            
                         </Navbar.Collapse>
+                        <Button text='Get started'/>
+                       
                     </Container>
                 </Navbar>
             </Container>

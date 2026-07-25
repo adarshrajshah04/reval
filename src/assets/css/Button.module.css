@@ -1,0 +1,13 @@
+.btn{
+    padding: 6px 16px ;
+    color: white;
+    background-color: var(--green);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.2s;
+
+}
+
+.btn:hover{
+    transform: translateY(-4px);
+}

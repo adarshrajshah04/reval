@@ -1,0 +1,10 @@
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.para{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
