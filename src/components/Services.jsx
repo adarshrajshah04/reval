@@ -1,4 +1,5 @@
 import React from 'react'
+import classes from '../assets/css/Services.module.css'
 
 
 import TopHeading from './TopHeading'
@@ -70,9 +71,9 @@ const Services = () => {
     <Container>
       <Row>
         {service.map(({id,title,description,buttonText,popular,Icon})=>(
-          <Col  xs={12} sm={6} md={4} className='d-flex mb-3'>
+          <Col  xs={12} sm={6} md={4} className={`d-flex mb-3 ${classes.card}`}>
             <div className='me-3'>
-              <p className='fw-bolder'>{id}</p>
+              <p className={`fw-bolder ${classes.card_id}`}>{id}</p>
             </div>
 
             <div>
@@ -81,7 +82,7 @@ const Services = () => {
 
               {popular?<button className='rounded-pill px-2 py-1 fw-bold fs-6 me-3'  style={{border:'1px solid var(--green)', background:'transparent',color:'var(--green)'}}>most popular</button>:<></>}
 
-              <button>{buttonText} <span>{Icon && <Icon/>}</span> </button>
+              <button style={{backgroundColor:'transparent' , color:'white',border:'none' , fontSize:'14px'}}>{buttonText} <span className={classes.icon  }>{Icon && <Icon/>}</span> </button>
                
               <hr className='my-5' style={{border:"1px solid gray"}} />
             </div>

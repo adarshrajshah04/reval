@@ -1,0 +1,12 @@
+.card:hover .card_id{
+    color: var(--green);
+}
+.icon{
+    transition: all 0.2s;
+    margin-left: 5px;
+    display: inline-block;
+}
+.card:hover .icon{
+    
+    transform: translateX(4px);
+}

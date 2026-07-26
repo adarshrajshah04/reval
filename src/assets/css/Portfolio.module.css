@@ -1,0 +1,15 @@
+.btn_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+    
+}
+
+.btn_div button{
+    background-color: transparent;
+    color: white;  
+     padding: 6px 14px;
+     border: 0.5px solid rgba(128, 128, 128, 0.321);
+     border-radius: 50px;
+}
