@@ -1,9 +1,10 @@
 import React from "react";
 import TopHeading from "./TopHeading";
 import classes from "../assets/css/Portfolio.module.css";
-import { Row, Col, Container, Button } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
+import Button from "./Button";
 
 import p_1 from "../assets/images/Portfolio/p_1.webp";
 import p_2 from "../assets/images/Portfolio/p_2.webp";
@@ -155,7 +156,10 @@ const Portfolio = () => {
                   <div>
                     <div className="d-flex gap-3">
                       <span>{category}</span>
-                      <p> <FaStar /> {rating}</p>
+                      <p>
+                        {" "}
+                        <FaStar /> {rating}
+                      </p>
                     </div>
 
                     <h3>{title}</h3>
@@ -170,12 +174,26 @@ const Portfolio = () => {
                     <button>
                       {buttonText} <FaArrowRight />
                     </button>
+
+                    <hr style={{ border: "0.5px solid gray" }} />
                   </div>
                 </Col>
               ),
             )}
           </Row>
         </div>
+
+        <Row className="py-5">
+          <hr style={{ border: "0.5px solid gray" }} />
+
+          <Col>
+          <h3>Have a project in mind?</h3>
+          <p>Let's collaborate and craft something remarkable together.</p>
+          </Col>
+          <Col>
+            <Button text=" Begin a conversation" />
+          </Col>
+        </Row>
       </div>
     </Container>
   );
