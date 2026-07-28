@@ -121,7 +121,7 @@ const Portfolio = () => {
         />
 
         <Row>
-          <Col>
+          <Col  className="order-1-md ">
             <p>
               Curated selection of recent projects spanning digital products,
               visual identity, and interactive experiences.
@@ -150,28 +150,40 @@ const Portfolio = () => {
                 buttonText,
               }) => (
                 <Col sx={12} md={6}>
-                  <div>
+                  <div className={classes.img_div}>
                     <img className="w-100" src={image} alt="" />
                   </div>
+
                   <div>
-                    <div className="d-flex gap-3">
-                      <span>{category}</span>
+                    <div className="d-flex gap-3 ">
+                      <span
+                        className="fw-bold"
+                        style={{ color: "var(--text)" }}
+                      >
+                        {category} {"/"}
+                      </span>
                       <p>
-                        {" "}
-                        <FaStar /> {rating}
+                        <span style={{ color: "#FBBF24" }}>
+                          {" "}
+                          <FaStar />
+                        </span>{" "}
+                        {rating}
                       </p>
                     </div>
 
-                    <h3>{title}</h3>
+                    <h3 className="fw-bold" style={{ color: "var(--h-text)" }}>
+                      {title}
+                    </h3>
+
                     <p>{description}</p>
 
                     <div>
                       {technologies.map((a) => (
-                        <button>{a}</button>
+                        <button className={classes.tech_btn}>{a}</button>
                       ))}
                     </div>
 
-                    <button>
+                    <button className={classes.project_btn}>
                       {buttonText} <FaArrowRight />
                     </button>
 
@@ -187,10 +199,10 @@ const Portfolio = () => {
           <hr style={{ border: "0.5px solid gray" }} />
 
           <Col>
-          <h3>Have a project in mind?</h3>
-          <p>Let's collaborate and craft something remarkable together.</p>
+            <h3 style={{color:'var(--h-text)'}}>Have a project in mind?</h3>
+            <p style={{color:'var(--h-text)'}}>Let's collaborate and craft something remarkable together.</p>
           </Col>
-          <Col>
+          <Col className={classes.f_btn}>
             <Button text=" Begin a conversation" />
           </Col>
         </Row>

@@ -13,3 +13,32 @@
      border: 0.5px solid rgba(128, 128, 128, 0.321);
      border-radius: 50px;
 }
+
+.img_div{
+    border-radius:10px;
+    overflow: hidden;
+    margin-bottom: 20px
+}
+
+.tech_btn{
+    border: 1px solid #181b2c4c;
+    background-color: #181B2C;
+    color: var(--h-text);
+    margin-right: 5px;
+    border-radius: 50px;
+    padding: 6px 14px;
+    font-size: 12px;
+}
+
+.project_btn{
+    background-color: transparent;
+    color: var(--h-text);
+    border: none;
+    margin-top: 10px;
+}
+
+.f_btn{
+   display: flex;
+   justify-content: end;
+   align-items: center;
+}
