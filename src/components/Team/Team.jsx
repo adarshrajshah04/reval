@@ -58,8 +58,8 @@ const Team = () => {
 
         <Row>
           <Col>
-            <b>Our People</b>
-            <h3>The Minds Behind Every Project</h3>
+            <b style={{color:'var(--text)'}}>Our People</b>
+            <h3 style={{color:'var(--h-text)'}}>The Minds Behind Every Project</h3>
             <p>
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur magni dolores eos qui ratione
