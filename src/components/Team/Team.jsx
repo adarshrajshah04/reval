@@ -1,7 +1,9 @@
 import React from "react";
-import TopHeading from "./TopHeading";
-import classes from "../assets/css/Team.module.css";
+import TopHeading from "../TopHeading";
+import classes from "../../assets/css/Team.module.css";
 import Sliderteam from "./Sliderteam";
+import Button from "../Button";
+
 
 import { Row, Col, Container } from "react-bootstrap";
 
@@ -11,11 +13,13 @@ import { FaGithub } from "react-icons/fa6";
 import { FaDribbble } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaBehance } from "react-icons/fa";
+import { GoArrowUpRight } from "react-icons/go";
+import { GoArrowRight } from "react-icons/go";
 
-import t_1 from "../assets/images/team_images/t_1.webp";
-import t_2 from "../assets/images/team_images/t_2.webp";
-import t_3 from "../assets/images/team_images/t_3.webp";
-import t_4 from "../assets/images/team_images/t_4.webp";
+import t_1 from '../../assets/images/team_images/t_1.webp';
+import t_2 from "../../assets/images/team_images/t_2.webp";
+import t_3 from "../../assets/images/team_images/t_3.webp";
+import t_4 from "../../assets/images/team_images/t_4.webp";
 
 const Team = () => {
   const member = [
@@ -83,17 +87,45 @@ const Team = () => {
                 </div>
 
                 <div>
-                  <h4 className="fs-5" style={{color:'var(--h-text)'}}>{title}</h4>
+                  <h4 className="fs-5" style={{ color: "var(--h-text)" }}>
+                    {title}
+                  </h4>
                   <p className="fs-6">{text}</p>
                 </div>
               </div>
             ))}
-
           </Col>
           <hr style={{ border: "0.5px solid gray" }} />
         </Row>
 
-           <Sliderteam/> 
+        <Sliderteam />
+
+
+
+        <div className={classes.team_bar}>
+          <Row>
+            <Col  className={classes.Col1}>
+              <div>
+               <span > <GoArrowUpRight /></span>
+              </div>
+              <div>
+                <h3 className="fs-3 fw-bolder" style={{color:'var(--h-text)'}}>Shape the Future With Us</h3>
+                <p>
+                  Itaque earum rerum hic tenetur a sapiente delectus ut aut
+                  reiciendis voluptatibus maiores alias perferendis doloribus.
+                </p>
+              </div>
+            </Col>
+
+            <Col className={classes.col2}>
+             <div className="d-flex">
+               <Button text='Explore Opportunities'/>
+              <button className={classes.button2}>Discover Our Values <GoArrowRight/></button>
+             </div>
+            
+            </Col>
+          </Row>
+        </div>
 
       </div>
     </Container>

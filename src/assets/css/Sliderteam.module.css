@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+.card{
+    padding: 0 20px;
+    
+}
+
+.farem{
+    background-color: #181B28;
+    transition: all 0.2s;
+}
+
+.farem:hover{
+  box-shadow: 0 12px 15px 10px var(--h-text);}
+.text_div{
+    padding:30px;
+}
+
+.text_div h3{
+    font-size: 20px;
+    color: var(--h-text);
+    font-weight: 600;
+}
+.icon{
+    border: 1px solid rgba(128, 128, 128, 0.304);
+    color: white;
+    font-size: 18px;
+    padding: 6px 6px ;
+    margin-right: 10px;
+
+}
+
+    
+
+
+
+/* Dots container */
+:global(.slick-dots) {
+    position: absolute;
+    bottom: -55px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Remove default button style */
+:global(.slick-dots li button::before) {
+    display: none;
+}
+
+/* Each dot wrapper */
+:global(.slick-dots li) {
+    width: auto;
+    height: auto;
+    margin: 0 4px;
+}
+
+/* Rectangle Dot */
+.dot {
+    width: 18px;
+    height: 6px;
+    border-radius: 2px;
+    background: #55576a;
+    transition: all .3s ease;
+}
+
+/* Active Dot */
+:global(.slick-dots li.slick-active) .dot {
+    width: 24px;
+    background: var(--green);
+}
+
+
+/* 
+:global(.slick-slider){
+    width:100%;
+}
+
+:global(.slick-list){
+    overflow:hidden;
+}
+
+:global(.slick-track){
+    display:flex;
+}
+
+.card{
+    padding:0 10px;
+} */

@@ -32,3 +32,40 @@
 .icon:hover{
     background-color: var(--green);
 }
+
+
+.team_bar{
+    margin-top: 100px;
+    background-color: #151628;
+   padding: 50px ;
+   border: 1px solid rgba(128, 128, 128, 0.244);
+}
+
+.Col1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.Col1 span{
+    border: 1px solid rgba(128, 128, 128, 0.405);
+    padding: 4px 8px;
+    margin-right: 10px;
+    color: var(--green);
+    font-size: 24px;
+}
+
+.col2{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.col2 .button2{
+    background-color: transparent;
+    color: var(--h-text);
+    border: none;
+    margin-left: 10px;
+
+}

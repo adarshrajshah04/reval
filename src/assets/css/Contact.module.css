@@ -1,0 +1,180 @@
+.contact {
+    background: #0d1023;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.tag {
+    color: #8c91b1;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 35px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--h-text);
+}
+
+.desc {
+    color: #8c91b1;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+
+/* ---------------- Contact Info ---------------- */
+
+.infoBox {
+    border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.item:hover {
+    transform: translateX(8px);
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    font-size: 22px;
+    color: #9ca3c7;
+}
+
+.item small {
+    color: #8c91b1;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.item h5 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 25px;
+    color: #8c91b1;
+}
+
+/* ---------------- Form ---------------- */
+
+.formCard {
+    background: #171b2f;
+    padding: 50px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.05);
+}
+
+.formCard h2 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.formCard p {
+    color: #8c91b1;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+.formCard label {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.formCard input,
+.formCard textarea {
+    background: #0d1023 !important;
+    border: 1px solid rgba(255,255,255,.08);
+    color: white !important;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.formCard input::placeholder,
+.formCard textarea::placeholder {
+    color: #6d7497;
+}
+
+.formCard input:focus,
+.formCard textarea:focus {
+    background: #0d1023;
+    color: white;
+    border-color: #4d72ff;
+    box-shadow: none;
+}
+
+.btn {
+    background: #4d72ff;
+    border: none;
+    padding: 14px 35px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #3157ea;
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width:991px){
+
+    .heading{
+        font-size:42px;
+    }
+
+    .formCard{
+        margin-top:40px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .contact{
+        padding:70px 0;
+    }
+
+    .heading{
+        font-size:34px;
+    }
+
+    .desc{
+        font-size:16px;
+    }
+
+    .item{
+        align-items:flex-start;
+    }
+
+    .item h5{
+        font-size:18px;
+    }
+
+    .formCard{
+        padding:30px;
+    }
+
+}

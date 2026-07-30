@@ -5,11 +5,12 @@ import Hero from './components/Hero/Hero';
 import About from './components/About/About.jsx';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio.jsx';
-import Team from './components/Team.jsx';
+import Team from './components/Team/Team.jsx';
 
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Contact from './components/Contact.jsx';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Services/>
       <Portfolio/>
       <Team/>
+      <Contact/>
     </div>
   )
 }
