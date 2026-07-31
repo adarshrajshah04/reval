@@ -13,6 +13,7 @@ import Contact from './components/Contact.jsx';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Routes, Route } from 'react-router-dom';
+import NotFound from './components/NotFound.jsx';
 
 
 const App = () => {
@@ -27,7 +28,9 @@ const App = () => {
        <Route path='/Portfolio' element={<Portfolio/>}/>
        <Route path='/Team' element={<Team/>}/>
        <Route path='/Contact' element={<Contact/>}/>
+       <Route path='*' element={<NotFound/>}/>
       </Routes>
+      
     </div>
   )
 }
